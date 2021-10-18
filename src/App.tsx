@@ -8,9 +8,10 @@ import About from "./Components/About";
 import Resume from "./Components/Resume";
 import Contact from "./Components/Contact";
 import Portfolio from "./Components/Portfolio";
+import { Props } from "particles-bg";
 
-class App extends Component {
-    constructor(props) {
+class App extends Component <any>{
+    constructor(props:any) {
         super(props);
         this.state = {
             foo: "bar",
@@ -26,10 +27,10 @@ class App extends Component {
             url: "./resumeData.json",
             dataType: "json",
             cache: false,
-            success: function(data) {
+            success: function (data:any) {
                 this.setState({ resumeData: data });
             }.bind(this),
-            error: function(xhr, status, err) {
+            error: function (xhr, status, err) {
                 console.log(err);
                 alert(err);
             }
@@ -41,20 +42,15 @@ class App extends Component {
     }
 
     render() {
-        return ( <
-            div className = "App" >
-            <
-            Header data = { this.state.resumeData.main }
-            /> <
-            About data = { this.state.resumeData.main }
-            /> <
-            Resume data = { this.state.resumeData.resume }
-            /> <
-            Portfolio data = { this.state.resumeData.portfolio }
-            /> <
-            Footer data = { this.state.resumeData.main }
-            /> <
-            /div>
+        return (
+        <div className="App">
+            <Header data={this.state.resumeData.main} />
+            <About data={this.state.resumeData.main} />
+            <Resume data={this.state.resumeData.resume} />
+            <Portfolio data={this.state.resumeData.portfolio} />
+            <Contact data={this.state.resumeData.main} />
+            <Footer data={this.state.resumeData.main} />
+        </div>
         );
     }
 }
