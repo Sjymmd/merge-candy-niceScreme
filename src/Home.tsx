@@ -181,12 +181,12 @@ const Home = (props: HomeProps) => {
 
       <MintContainer>
         {!wallet ? (
-          <ConnectButton>Connect Wallet</ConnectButton>
+          <ConnectButton className="button btn project-btn">Connect Wallet</ConnectButton>
         ) : (
           <MintButton
             disabled={isSoldOut || isMinting || !isActive}
             onClick={onMint}
-            variant="contained"
+            variant="contained" className="button btn project-btn"
           >
             {isSoldOut ? (
               "SOLD OUT"
