@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/merge-candy-niceScreme/static/css/main.76598800.chunk.css",
+    "main.js": "/merge-candy-niceScreme/static/js/main.ead319e7.chunk.js",
+    "main.js.map": "/merge-candy-niceScreme/static/js/main.ead319e7.chunk.js.map",
+    "runtime-main.js": "/merge-candy-niceScreme/static/js/runtime-main.b7c85571.js",
+    "runtime-main.js.map": "/merge-candy-niceScreme/static/js/runtime-main.b7c85571.js.map",
+    "static/js/2.dcfd9f65.chunk.js": "/merge-candy-niceScreme/static/js/2.dcfd9f65.chunk.js",
+    "static/js/2.dcfd9f65.chunk.js.map": "/merge-candy-niceScreme/static/js/2.dcfd9f65.chunk.js.map",
+    "static/js/3.c3cb7813.chunk.js": "/merge-candy-niceScreme/static/js/3.c3cb7813.chunk.js",
+    "static/js/3.c3cb7813.chunk.js.map": "/merge-candy-niceScreme/static/js/3.c3cb7813.chunk.js.map",
+    "index.html": "/merge-candy-niceScreme/index.html",
+    "static/css/main.76598800.chunk.css.map": "/merge-candy-niceScreme/static/css/main.76598800.chunk.css.map",
+    "static/js/2.dcfd9f65.chunk.js.LICENSE.txt": "/merge-candy-niceScreme/static/js/2.dcfd9f65.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b7c85571.js",
+    "static/js/2.dcfd9f65.chunk.js",
+    "static/css/main.76598800.chunk.css",
+    "static/js/main.ead319e7.chunk.js"
+  ]
+}
