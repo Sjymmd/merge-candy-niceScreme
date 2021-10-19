@@ -34,7 +34,10 @@
         "particles-bg": "^2.5.5",
         "react-ga": "^3.3.0",
         "react-reveal": "^1.2.2",
-        "react-zmage": "^0.8.5-beta.36"
+        "react-zmage": "^0.8.5-beta.36",
+        "superagent": "^3.6.0",
+        "@types/superagent": "^3.5.5",
+        "jquery": "^3.2.1"
     },
     "scripts": {
         "start": "react-scripts start",
@@ -64,6 +67,5 @@
     },
     "devDependencies": {
         "@types/styled-components": "^5.1.14"
-    },
-    "homepage": "https://sjymmd.github.io/candy-machine-mint"
+    }
 }

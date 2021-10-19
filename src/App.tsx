@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ReactGA from "react-ga";
-import $ from "jquery";
+// import $ from "jquery";
 import "./App.css";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
@@ -8,9 +8,10 @@ import About from "./Components/About";
 import Resume from "./Components/Resume";
 import Contact from "./Components/Contact";
 import Portfolio from "./Components/Portfolio";
-import { Props } from "particles-bg";
+import Apps from "./Appbak";
+// import { Props } from "particles-bg";
 
-class App extends Component <any>{
+class App extends Component <any,any>{
     constructor(props:any) {
         super(props);
         this.state = {
@@ -23,13 +24,14 @@ class App extends Component <any>{
     }
 
     getResumeData() {
-        $.ajax({
+        const that = this;
+        jQuery.ajax({
             url: "./resumeData.json",
             dataType: "json",
             cache: false,
-            success: function (data:any) {
-                this.setState({ resumeData: data });
-            }.bind(this),
+            success : (data:any) =>{
+                that.setState({ resumeData: data })
+            },
             error: function (xhr, status, err) {
                 console.log(err);
                 alert(err);
@@ -44,6 +46,7 @@ class App extends Component <any>{
     render() {
         return (
         <div className="App">
+            <Apps/>
             <Header data={this.state.resumeData.main} />
             <About data={this.state.resumeData.main} />
             <Resume data={this.state.resumeData.resume} />
